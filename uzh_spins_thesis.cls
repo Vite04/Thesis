@@ -175,18 +175,19 @@
                       \@afterheading
                     \fi}
 \def\@makechapterhead#1{%
-  \vspace*{12\p@}%
+  \vspace*{0\p@}%
   {\parindent \z@ \raggedleft
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
-        {\fontfamily{phv}\fontsize{20}{22}\selectfont \@chapapp\space \thechapter\par}
-        \vskip 4\p@
+        {\normalfont\large\bfseries \@chapapp\space \thechapter\par}
+        \vskip 6\p@
       \fi
     \fi
-    {\fontfamily{phv}\fontsize{20}{22}\selectfont #1\par}
-    \vskip 4\p@
-    \vbox{\hrule height0.25pt width\textwidth}
-    \vskip 8\p@
+    \interlinepenalty\@M
+    {\normalfont\huge\bfseries #1\par}
+     \vskip 1\p@
+     \vbox{\hrule height0.25pt width\textwidth}
+     \vskip 24\p@
   }}
 \def\@schapter#1{\if@twocolumn
                    \@topnewpage[\@makeschapterhead{#1}]%
@@ -195,14 +196,19 @@
                    \@afterheading
                  \fi}
 \def\@makeschapterhead#1{%
-  \vspace*{12\p@}%
+  \vspace*{0\p@}%
   {\parindent \z@ \raggedleft
     \interlinepenalty\@M
-    {\fontfamily{phv}\fontsize{20}{22}\selectfont #1\par}
-    \vskip 4\p@
-    \vbox{\hrule height0.25pt width\textwidth}
-    \vskip 8\p@
+    {\normalfont\huge\bfseries #1\par}
+     \vskip 1\p@
+     \vbox{\hrule height0.25pt width\textwidth}
+     \vskip 24\p@
   }}
+\let\origdoublepage\cleardoublepage
+\renewcommand{\cleardoublepage}{%
+  \clearpage
+  {\pagestyle{empty}\origdoublepage}%
+}
 \renewcommand\section{\@startsection {section}{1}{\z@}%
                                    {-3.8ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%

@@ -21,61 +21,25 @@
  
  \frontmatter
  
- \begin{acknowledgements}
- \end{acknowledgements}
+ \include{chapters/00_acknowledgements}
  
- \begin{abstract}
- \end{abstract}
+ \include{chapters/00_abstract}
  
  \tableofcontents
- \listoffigures
- \listoftables
-\lstlistoflistings
- \cleardoublepage
  \mainmatter
- \chapter{Introduction}
- \section{Motivation: The IPv4 to IPv6 Transition}
- \section{Problem Statement: Loss of NAT and IoT Exposure}
- \section{Research Objectives \& Questions}
- \section{Contributions}
- \section{Thesis Structure}
- \chapter{Background and Related Work}\label{chap:background}
- \section{IPv6 Architecture vs. IPv4}
- \section{The IoT Security Landscape}
- \section{Network Perimeter Security}
- \section{Related Work}
+ \include{chapters/01_introduction}
+ \include{chapters/02_background}
+ \include{chapters/03_methodology}
+ \include{chapters/04_configuration}
+ \include{chapters/05_demonstration}
+ \include{chapters/06_mitigation}
+ \include{chapters/07_discussion}
+ \include{chapters/08_conclusion}
  
- \chapter{Methodology}\label{chap:method}
- \section{Research Design}
- \section{Experimental Setup}
- \section{Ethical Considerations}
- 
- \chapter{Configuration and Risk Analysis}\label{chap:config}
- \section{Default Router Configurations}
- \section{IPv6 Attack Vectors}
- 
- \chapter{Experimental Demonstration}\label{chap:demo}
- \section{Scenario: Global Accessibility of an IoT Device}
- \section{Scanning and Enumeration Results}
- \section{Vulnerability Exploitation}
- 
- \chapter{Mitigation Strategies}\label{chap:mitigation}
- \section{Recommendations for Network Administrators}
- \section{Recommendations for Manufacturers}
- \section{End-User Best Practices}
- 
- \chapter{Discussion and Limitations}\label{chap:discussion}
- \section{Interpretation of Results}
- \section{Limitations}
- \section{Threats to Validity}
- 
- \chapter{Conclusion and Future Work}\label{chap:conclusion}
- 
- \printbibliography
+ \printbibliography[heading=bibintoc]
  
  \appendix
- \chapter{First Appendix}
- \chapter{Second Appendix}
+ \include{chapters/99_appendix}
  
  \backmatter
  
