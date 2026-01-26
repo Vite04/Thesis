@@ -175,35 +175,35 @@
                       \@afterheading
                     \fi}
 \def\@makechapterhead#1{%
-  \vspace*{0\p@}%
-  {\parindent \z@ \raggedleft
-    \ifnum \c@secnumdepth >\m@ne
-      \if@mainmatter
-        {\normalfont\large\bfseries \@chapapp\space \thechapter\par}
-        \vskip 6\p@
-      \fi
-    \fi
-    \interlinepenalty\@M
-    {\normalfont\huge\bfseries #1\par}
-     \vskip 1\p@
+   \vspace*{12\p@}%
+   {\parindent \z@ \raggedleft
+     \ifnum \c@secnumdepth >\m@ne
+       \if@mainmatter
+         {\normalfont\large\bfseries \@chapapp\space \thechapter\par}
+         \vskip 6\p@
+       \fi
+     \fi
+     \interlinepenalty\@M
+     {\fontfamily{phv}\fontsize{20}{0}\selectfont\bfseries #1\par}
+     \vskip -6\p@
      \vbox{\hrule height0.25pt width\textwidth}
      \vskip 24\p@
-  }}
-\def\@schapter#1{\if@twocolumn
-                   \@topnewpage[\@makeschapterhead{#1}]%
-                 \else
-                   \@makeschapterhead{#1}%
-                   \@afterheading
-                 \fi}
-\def\@makeschapterhead#1{%
-  \vspace*{0\p@}%
-  {\parindent \z@ \raggedleft
-    \interlinepenalty\@M
-    {\normalfont\huge\bfseries #1\par}
-     \vskip 1\p@
+   }}
+ \def\@schapter#1{\if@twocolumn
+                    \@topnewpage[\@makeschapterhead{#1}]%
+                  \else
+                    \@makeschapterhead{#1}%
+                    \@afterheading
+                  \fi}
+ \def\@makeschapterhead#1{%
+   \vspace*{12\p@}%
+   {\parindent \z@ \raggedleft
+     \interlinepenalty\@M
+     {\fontfamily{phv}\fontsize{20}{0}\selectfont\bfseries #1\par}
+     \vskip -6\p@
      \vbox{\hrule height0.25pt width\textwidth}
      \vskip 24\p@
-  }}
+   }}
 \let\origdoublepage\cleardoublepage
 \renewcommand{\cleardoublepage}{%
   \clearpage
