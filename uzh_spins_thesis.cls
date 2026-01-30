@@ -175,19 +175,19 @@
                       \@afterheading
                     \fi}
 \def\@makechapterhead#1{%
-   \vspace*{12\p@}%
-   {\parindent \z@ \raggedleft
+   \vspace*{20\p@}%
+   {\parindent \z@ \raggedright
+     \interlinepenalty\@M
      \ifnum \c@secnumdepth >\m@ne
        \if@mainmatter
-         {\normalfont\large\bfseries \@chapapp\space \thechapter\par}
-         \vskip 6\p@
+         {\fontfamily{phv}\fontsize{20}{24}\selectfont\bfseries \thechapter.\ \ #1\par}
+       \else
+         {\fontfamily{phv}\fontsize{20}{24}\selectfont\bfseries #1\par}
        \fi
+     \else
+       {\fontfamily{phv}\fontsize{20}{24}\selectfont\bfseries #1\par}
      \fi
-     \interlinepenalty\@M
-     {\fontfamily{phv}\fontsize{20}{0}\selectfont\bfseries #1\par}
-     \vskip -6\p@
-     \vbox{\hrule height0.25pt width\textwidth}
-     \vskip 24\p@
+     \vskip 20\p@
    }}
  \def\@schapter#1{\if@twocolumn
                     \@topnewpage[\@makeschapterhead{#1}]%
@@ -196,13 +196,11 @@
                     \@afterheading
                   \fi}
  \def\@makeschapterhead#1{%
-   \vspace*{12\p@}%
-   {\parindent \z@ \raggedleft
+   \vspace*{20\p@}%
+   {\parindent \z@ \raggedright
      \interlinepenalty\@M
-     {\fontfamily{phv}\fontsize{20}{0}\selectfont\bfseries #1\par}
-     \vskip -6\p@
-     \vbox{\hrule height0.25pt width\textwidth}
-     \vskip 24\p@
+     {\fontfamily{phv}\fontsize{20}{24}\selectfont\bfseries #1\par}
+     \vskip 20\p@
    }}
 \let\origdoublepage\cleardoublepage
 \renewcommand{\cleardoublepage}{%
@@ -212,28 +210,28 @@
 \renewcommand\section{\@startsection {section}{1}{\z@}%
                                    {-3.8ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%
-                                   {\fontfamily{phv}\fontsize{20}{22}\selectfont\raggedleft}}
+                                   {\fontfamily{phv}\fontsize{13}{16}\selectfont\raggedright}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
                                      {-3.3ex\@plus -1ex \@minus -.2ex}%
                                      {1.5ex \@plus .2ex}%
-                                     {\fontfamily{phv}\fontsize{18}{20}\selectfont\raggedleft}}
+                                     {\fontfamily{phv}\fontsize{11}{14}\selectfont\raggedright}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
                                      {-3.3ex\@plus -1ex \@minus -.2ex}%
                                      {1.5ex \@plus .2ex}%
-                                     {\fontfamily{phv}\fontsize{16}{18}\selectfont\raggedleft}}
+                                     {\fontfamily{phv}\fontsize{10}{12}\selectfont\raggedright}}
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
                                     {3.25ex \@plus1ex \@minus.2ex}%
                                     {-1em}%
-                                    {\fontfamily{phv}\fontsize{14}{16}\selectfont\raggedleft}}
+                                    {\fontfamily{phv}\fontsize{10}{12}\selectfont\raggedright}}
 % regla inferior tras títulos de secciones
 \let\orig@section\section
 \let\orig@subsection\subsection
 \let\orig@subsubsection\subsubsection
 \let\orig@paragraph\paragraph
-\renewcommand{\section}[1]{\orig@section{#1}\par\nobreak\vskip 6\p@\vbox{\hrule height0.25pt width\textwidth}\vskip 12\p@}
-\renewcommand{\subsection}[1]{\orig@subsection{#1}\par\nobreak\vskip 5\p@\vbox{\hrule height0.25pt width\textwidth}\vskip 10\p@}
-\renewcommand{\subsubsection}[1]{\orig@subsubsection{#1}\par\nobreak\vskip 4\p@\vbox{\hrule height0.25pt width\textwidth}\vskip 8\p@}
-\renewcommand{\paragraph}[1]{\orig@paragraph{#1}\par\nobreak\vskip 3\p@\vbox{\hrule height0.25pt width\textwidth}\vskip 6\p@}
+\renewcommand{\section}[1]{\orig@section{#1}\par\nobreak\vskip 12\p@}
+\renewcommand{\subsection}[1]{\orig@subsection{#1}\par\nobreak\vskip 10\p@}
+\renewcommand{\subsubsection}[1]{\orig@subsubsection{#1}\par\nobreak\vskip 8\p@}
+\renewcommand{\paragraph}[1]{\orig@paragraph{#1}\par\nobreak\vskip 6\p@}
 \renewcommand\tableofcontents{%
 	\if@twocolumn
 		\@restonecoltrue\onecolumn
