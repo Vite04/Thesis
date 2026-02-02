@@ -2,6 +2,7 @@
 \ProvidesClass{uzh_spins_thesis}[2026/01/26 v1.0 UZH SPINS LaTeX thesis class]
 \LoadClass[10pt,twoside,a4paper,fleqn]{book}
 \RequirePackage{uzh_spins}
+\RequirePackage{titlesec}
 \RequirePackage{fancyhdr}
 \setlength{\textwidth}{15cm}
 \setlength{\textheight}{21.3cm}
@@ -207,31 +208,37 @@
   \clearpage
   {\pagestyle{empty}\origdoublepage}%
 }
-\renewcommand\section{\@startsection {section}{1}{\z@}%
-                                   {-3.8ex \@plus -1ex \@minus -.2ex}%
-                                   {2.3ex \@plus.2ex}%
-                                   {\fontfamily{phv}\fontsize{13}{16}\selectfont\raggedright}}
-\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-                                     {-3.3ex\@plus -1ex \@minus -.2ex}%
-                                     {1.5ex \@plus .2ex}%
-                                     {\fontfamily{phv}\fontsize{11}{14}\selectfont\raggedright}}
-\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-                                     {-3.3ex\@plus -1ex \@minus -.2ex}%
-                                     {1.5ex \@plus .2ex}%
-                                     {\fontfamily{phv}\fontsize{10}{12}\selectfont\raggedright}}
-\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
-                                    {3.25ex \@plus1ex \@minus.2ex}%
-                                    {-1em}%
-                                    {\fontfamily{phv}\fontsize{10}{12}\selectfont\raggedright}}
-% regla inferior tras títulos de secciones
-\let\orig@section\section
-\let\orig@subsection\subsection
-\let\orig@subsubsection\subsubsection
-\let\orig@paragraph\paragraph
-\renewcommand{\section}[1]{\orig@section{#1}\par\nobreak\vskip 12\p@}
-\renewcommand{\subsection}[1]{\orig@subsection{#1}\par\nobreak\vskip 10\p@}
-\renewcommand{\subsubsection}[1]{\orig@subsubsection{#1}\par\nobreak\vskip 8\p@}
-\renewcommand{\paragraph}[1]{\orig@paragraph{#1}\par\nobreak\vskip 6\p@}
+% Section formatting using titlesec
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\titleformat{\section}[runin]
+  {\normalfont\normalsize\bfseries}
+  {}
+  {0em}
+  {}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{1em}
+
+\titleformat{\subsection}[runin]
+  {\normalfont\normalsize\bfseries}
+  {}
+  {0em}
+  {}
+\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1em}
+
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\bfseries}
+  {}
+  {0em}
+  {}
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1em}
+
+\titleformat{\paragraph}[runin]
+  {\normalfont\normalsize\bfseries}
+  {}
+  {0em}
+  {}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1em}
 \renewcommand\tableofcontents{%
 	\if@twocolumn
 		\@restonecoltrue\onecolumn
