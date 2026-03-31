@@ -214,21 +214,21 @@
 
 \titleformat{\section}[runin]
   {\normalfont\normalsize\bfseries}
-  {}
+  {\thesection\quad}
   {0em}
   {}
 \titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{1em}
 
 \titleformat{\subsection}[runin]
   {\normalfont\normalsize\bfseries}
-  {}
+  {\thesubsection\quad}
   {0em}
   {}
 \titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1em}
 
 \titleformat{\subsubsection}[runin]
   {\normalfont\normalsize\bfseries}
-  {}
+  {\thesubsubsection\quad}
   {0em}
   {}
 \titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1em}

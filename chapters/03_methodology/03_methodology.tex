@@ -1,8 +1,60 @@
-\chapter{Methodology}\label{chap:method}
-\section{Research Design}
-\section{Testbed Architecture}
-\section{Experimental Variables and Scenarios}
-\section{Firmware Implementation}
-\section{Attack Toolkit and Measurement Procedure}
-\section{Data Collection and Evaluation Criteria}
-\section{Ethical Considerations}
+\chapter{Methodology}\label{ch:methodology} 
+
+% ========================================== 
+\section{Research Design}\label{sec:research-design} 
+% Aquí va la introducción del diseño experimental (case study controlado).
+% Incluye motivación basada en el research gap del Chapter 2.
+% Explica la progresión de escenarios (S0 → S4) como relajación del perímetro.
+
+% ========================================== 
+\section{Testbed Architecture and Threat Model}\label{sec:testbed-threat-model} 
+% Aquí se describe la topología completa del experimento:
+% - ESP32 (dispositivo objetivo)
+% - Router residencial (CPE)
+% - Host interno
+% - VPS externo
+% Pendiente: Insertar Tabla 3.1 (Testbed Components).
+% Pendiente: Insertar diagrama de red.
+%
+% Inmediatamente después, definir:
+% - Observer A (External Active Attacker)
+% - Observer B (Local Passive Observer)
+% Explicar capacidades y limitaciones de cada uno.
+
+% ========================================== 
+\section{Experimental Scenarios}\label{sec:experimental-scenarios} 
+% Aquí defines los escenarios S0–S4 como núcleo del experimento.
+% Las variables (firewall, origen, IP version, protocolo) se introducen
+% dentro de cada escenario en lugar de una tabla separada.
+%
+% Ejemplo: "In this scenario, the firewall is enabled and the attacker is external..."
+%
+% Pendiente: Insertar Tabla 3.3 (Scenario Definitions).
+%
+% Añadir frase breve formal:
+% "The experimental variables are expressed through the configuration of each scenario."
+
+% ========================================== 
+\section{Measurement and Evaluation}\label{sec:measurement-evaluation} 
+% Aquí defines:
+% - Qué métricas usas (reachability, accessibility, visibility)
+% - Cómo se definen (no interpretación, solo definición operativa)
+% - Con qué herramientas se miden (ping6, nmap, curl, tcpdump)
+%
+% IMPORTANTE:
+% - NO interpretar resultados
+% - NO comparar IPv4 vs IPv6 aquí
+%
+% Puedes integrar:
+% - criterios de evaluación (antes 3.6)
+% - métodos de medición (antes 3.7)
+%
+% Pendiente: Insertar tabla combinada o mantener tablas separadas si ya están listas.
+
+% ========================================== 
+\section{Ethical Considerations}\label{sec:ethical-considerations} 
+% Justificación ética:
+% - Infraestructura propia
+% - No escaneo a terceros
+% - Firmware controlado
+% - Captura limitada al tráfico generado en el experimento
