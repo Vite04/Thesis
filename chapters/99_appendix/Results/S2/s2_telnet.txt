@@ -1,0 +1,17 @@
+Trying 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c...
+Connected to 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C.
+Escape character is '^]'.
+ESP32 Legacy Telnet Service
+Username: Password: 
+Access granted
+Type 'status' or 'exit'
+> Device status: ONLINE
+MAC: 28:05:A5:0E:73:6C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+HTTP hits: 2
+Telnet sessions: 2
+Login successes: 1
+> Bye
+
+
+

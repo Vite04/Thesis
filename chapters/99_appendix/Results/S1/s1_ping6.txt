@@ -1,0 +1,18 @@
+PING 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C (2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c) 56 data bytes
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=1 ttl=238 time=41.9 ms
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=2 ttl=238 time=44.1 ms
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=3 ttl=238 time=38.6 ms
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=4 ttl=238 time=39.1 ms
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=5 ttl=238 time=38.8 ms
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=6 ttl=238 time=41.7 ms
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=7 ttl=238 time=38.7 ms
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=8 ttl=238 time=43.8 ms
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=9 ttl=238 time=41.0 ms
+64 bytes from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: icmp_seq=10 ttl=238 time=40.1 ms
+
+--- 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9014ms
+rtt min/avg/max/mdev = 38.627/40.787/44.108/1.964 ms
+
+
+

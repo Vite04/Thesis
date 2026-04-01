@@ -1,0 +1,13 @@
+PING 144.2.66.107 (144.2.66.107) 56(84) bytes of data.
+64 bytes from 144.2.66.107: icmp_seq=1 ttl=49 time=39.1 ms
+64 bytes from 144.2.66.107: icmp_seq=2 ttl=49 time=34.8 ms
+64 bytes from 144.2.66.107: icmp_seq=3 ttl=49 time=34.8 ms
+64 bytes from 144.2.66.107: icmp_seq=4 ttl=49 time=34.7 ms
+64 bytes from 144.2.66.107: icmp_seq=5 ttl=49 time=34.8 ms
+
+--- 144.2.66.107 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4007ms
+rtt min/avg/max/mdev = 34.651/35.621/39.055/1.717 ms
+
+
+

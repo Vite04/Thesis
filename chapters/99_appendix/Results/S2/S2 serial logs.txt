@@ -1,0 +1,220 @@
+=== ESP32 IPv6 Thesis Demo ===
+Connecting to WiFi...
+Waiting for WiFi...
+WiFi connected
+IPv4: 192.168.0.10
+MAC:  28:05:A5:0E:73:6C
+Link-local IPv6 init: OK
+[4029ms] [IPv6] Address acquired: FE80::2A05:A5FF:FE0E:736C
+=== DEVICE IDENTITY ===
+MAC:         28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: not yet available
+[5139ms] [TELNET] Listening on port 23 (IPv6)
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+[5139ms] [HTTP] Listening on port 80 (IPv6)      
+[8029ms] [IPv6] Address acquired: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+                                                                      28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+=== DEVICE IDENTITY ===
+MAC:         28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+=== DEVICE IDENTITY ===
+MAC:         28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+                                                                      28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+=== DEVICE IDENTITY ===
+MAC:         28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+                                                                      28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+                                                                      28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+                                                                0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+=== ESP32 IPv6 Thesis Demo ===
+Connecting to WiFi...
+Waiting for WiFi...
+WiFi connected
+IPv4: 192.168.0.10
+MAC:  28:05:A5:0E:73:6C
+Link-local IPv6 init: OK
+[4029ms] [IPv6] Address acquired: FE80::2A05:A5FF:FE0E:736C
+=== DEVICE IDENTITY ===
+MAC:         28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: not yet available
+[5142ms] [TELNET] Listening on port 23 (IPv6)    
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+[5142ms] [HTTP] Listening on port 80 (IPv6)      
+[8029ms] [IPv6] Address acquired: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=== DEVICE IDENTITY ===
+MAC:         28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=======================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   0
+  telnet_login_success: 0
+  telnet_login_failure: 0
+================
+[122672ms] [TELNET] src=2A01:4F9:C014:5C1D::1 port=45338 connected
+[122683ms] [TELNET] src=2A01:4F9:C014:5C1D::1 username=
+[122693ms] [TELNET] src=2A01:4F9:C014:5C1D::1 password=
+[122693ms] [TELNET] src=2A01:4F9:C014:5C1D::1 login=FAILED
+=== COUNTERS ===
+  http_hits_total:      0
+  hidden_admin_hits:    0
+  telnet_connections:   1
+  telnet_login_success: 0
+  telnet_login_failure: 1
+================
+[130115ms] [HTTP] src=2A01:4F9:C014:5C1D::1 port=60068 path=/
+=== COUNTERS ===
+  http_hits_total:      1
+  hidden_admin_hits:    0
+  telnet_connections:   1
+  telnet_login_success: 0
+  telnet_login_failure: 1
+================
+                                                                014:5C1D::1 port=60058 path=/hidden_admin
+[140619ms] [HTTP] *** HIDDEN ADMIN accessed from 2A01:4F9:C014:5C1D::1 ***
+=== COUNTERS ===
+  http_hits_total:      2
+  hidden_admin_hits:    1
+  telnet_connections:   1
+  telnet_login_success: 0
+  telnet_login_failure: 1
+================
+[201478ms] [TELNET] src=2A01:4F9:C014:5C1D::1 port=49684 connected
+=== DEVICE IDENTITY ===
+MAC:         28:05:A5:0E:73:6C
+IPv4:        192.168.0.10
+Link-local:  FE80::2A05:A5FF:FE0E:736C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+=======================
+=== COUNTERS ===
+  http_hits_total:      2
+  hidden_admin_hits:    1
+  telnet_connections:   2
+  telnet_login_success: 0
+  telnet_login_failure: 1
+================
+[207914ms] [TELNET] src=2A01:4F9:C014:5C1D::1 username=admin
+[210387ms] [TELNET] src=2A01:4F9:C014:5C1D::1 password=admin
+[210387ms] [TELNET] src=2A01:4F9:C014:5C1D::1 login=SUCCESS
+[220420ms] [TELNET] src=2A01:4F9:C014:5C1D::1 cmd=status
+[225031ms] [TELNET] src=2A01:4F9:C014:5C1D::1 cmd=exit
+=== COUNTERS ===
+  http_hits_total:      2
+  hidden_admin_hits:    1
+  telnet_connections:   2
+  telnet_login_success: 1
+  telnet_login_failure: 1
+================
+
+
+

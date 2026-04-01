@@ -1,0 +1,14 @@
+
+Pinging 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c with 32 bytes of data:
+Reply from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: time=180ms 
+Reply from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: time=7ms 
+Reply from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: time=7ms 
+Reply from 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: time=8ms 
+
+Ping statistics for 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 7ms, Maximum = 180ms, Average = 50ms
+
+
+

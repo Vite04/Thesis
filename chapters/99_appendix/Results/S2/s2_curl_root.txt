@@ -1,0 +1,36 @@
+ssh :   % Total    % Received % Xferd  Average Speed   Time    Time     Time 
+ Current
+At line:1 char:1
++ ssh $VPS "curl -v --max-time 10 http://[$ESP32]/" 2>&1 | Tee-Object s ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Curre 
+   nt:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     
+0*   Trying [2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c]:80...
+* Connected to 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C 
+(2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c) port 80
+> GET / HTTP/1.1
+> Host: [2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C]
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Type: text/html
+< Content-Length: 367
+< Connection: close
+< 
+{ [367 bytes data]
+
+100   367  100   367    0     0   3883      0 --:--:-- --:--:-- --:--:--  
+3863
+100   367  100   367    0     0   3880      0 --:--:-- --:--:-- --:--:--  
+3863
+* Closing connection
+<html><body><h1>ESP32 IoT Device Dashboard</h1><p>Status: Online</p><p>Device: ESP32</p><p>Service: IPv6 test node</p><p>Firmware: 1.0-demo</p><p>MAC: 28:05:A5:0E:73:6C</p><p>Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C</p><p>Link-local: FE80::2A05:A5FF:FE0E:736C</p><hr><p>HTTP hits: 1</p><p>Hidden admin hits: 0</p><p>Telnet connections: 1</p></body></html>
+
+
+

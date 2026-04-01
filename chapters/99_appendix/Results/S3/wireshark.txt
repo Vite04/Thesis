@@ -1,0 +1,677 @@
+No.     Time           Source                Destination           Protocol Length Info
+  62433 123.312874     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      86     6250 -> 80 [SYN] Seq=0 Win=65535 Len=0 MSS=1412 WS=256 SACK_PERM
+
+Frame 62433: Packet, 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:14.458268000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:14.458268000 UTC
+    Epoch Arrival Time: 1774456274.458268000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 6.246000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 3.312874000 seconds]
+    Frame Number: 62433
+    Frame Length: 86 bytes (688 bits)
+    Capture Length: 86 bytes (688 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6250, Dst Port: 80, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  62586 123.634538     2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd TCP      78     80 -> 6250 [SYN, ACK] Seq=0 Ack=1 Win=5760 Len=0 MSS=1412
+
+Frame 62586: Packet, 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:14.779932000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:14.779932000 UTC
+    Epoch Arrival Time: 1774456274.779932000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 7.760000 milliseconds]
+    [Time delta from previous displayed frame: 321.664000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 3.634538000 seconds]
+    Frame Number: 62586
+    Frame Length: 78 bytes (624 bits)
+    Capture Length: 78 bytes (624 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: Espressif_0e:73:6c (28:05:a5:0e:73:6c), Dst: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c, Dst: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd
+Transmission Control Protocol, Src Port: 80, Dst Port: 6250, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  62587 123.634614     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      74     6250 -> 80 [ACK] Seq=1 Ack=1 Win=65535 Len=0
+
+Frame 62587: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:14.780008000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:14.780008000 UTC
+    Epoch Arrival Time: 1774456274.780008000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 76.000 microseconds]
+    [Time delta from previous displayed frame: 76.000 microseconds]
+    [Time since reference or first frame: 2 minutes, 3.634614000 seconds]
+    Frame Number: 62587
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6250, Dst Port: 80, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  62588 123.635123     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c HTTP     272    GET /hidden_admin HTTP/1.1 
+
+Frame 62588: Packet, 272 bytes on wire (2176 bits), 272 bytes captured (2176 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:14.780517000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:14.780517000 UTC
+    Epoch Arrival Time: 1774456274.780517000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 509.000 microseconds]
+    [Time delta from previous displayed frame: 509.000 microseconds]
+    [Time since reference or first frame: 2 minutes, 3.635123000 seconds]
+    Frame Number: 62588
+    Frame Length: 272 bytes (2176 bits)
+    Capture Length: 272 bytes (2176 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:http]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6250, Dst Port: 80, Seq: 1, Ack: 1, Len: 198
+Hypertext Transfer Protocol
+    GET /hidden_admin HTTP/1.1\r\n
+    User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.7920\r\n
+    Host: [2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C]\r\n
+    Connection: Keep-Alive\r\n
+    \r\n
+    [Response in frame: 62595]
+    [Full request URI: http://[2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C]/hidden_admin]
+
+No.     Time           Source                Destination           Protocol Length Info
+  62595 123.656565     2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd HTTP     337    HTTP/1.1 200 OK  (text/html)
+
+Frame 62595: Packet, 337 bytes on wire (2696 bits), 337 bytes captured (2696 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:14.801959000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:14.801959000 UTC
+    Epoch Arrival Time: 1774456274.801959000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 16.340000 milliseconds]
+    [Time delta from previous displayed frame: 21.442000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 3.656565000 seconds]
+    Frame Number: 62595
+    Frame Length: 337 bytes (2696 bits)
+    Capture Length: 337 bytes (2696 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:http:data-text-lines]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: Espressif_0e:73:6c (28:05:a5:0e:73:6c), Dst: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c, Dst: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd
+Transmission Control Protocol, Src Port: 80, Dst Port: 6250, Seq: 1, Ack: 199, Len: 263
+Hypertext Transfer Protocol
+    HTTP/1.1 200 OK\r\n
+    Content-Type: text/html\r\n
+    Content-Length: 179\r\n
+    Connection: close\r\n
+    \r\n
+    [Request in frame: 62588]
+    [Time since request: 21.442000 milliseconds]
+    [Request URI: /hidden_admin]
+    [Full request URI: http://[2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C]/hidden_admin]
+    File Data: 179 bytes
+Line-based text data: text/html (1 lines)
+    <html><body><h1>Hidden Admin Interface</h1><p>Diagnostic Mode: ENABLED</p><p>Debug Access: TRUE</p><p>Warning: undocumented endpoint</p><p>MAC: 28:05:A5:0E:73:6C</p></body></html>
+
+No.     Time           Source                Destination           Protocol Length Info
+  62597 123.660383     2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd TCP      74     80 -> 6250 [FIN, ACK] Seq=264 Ack=199 Win=5562 Len=0
+
+Frame 62597: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:14.805777000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:14.805777000 UTC
+    Epoch Arrival Time: 1774456274.805777000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 94.000 microseconds]
+    [Time delta from previous displayed frame: 3.818000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 3.660383000 seconds]
+    Frame Number: 62597
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: Espressif_0e:73:6c (28:05:a5:0e:73:6c), Dst: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c, Dst: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd
+Transmission Control Protocol, Src Port: 80, Dst Port: 6250, Seq: 264, Ack: 199, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  62598 123.660416     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      74     6250 -> 80 [ACK] Seq=199 Ack=265 Win=65272 Len=0
+
+Frame 62598: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:14.805810000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:14.805810000 UTC
+    Epoch Arrival Time: 1774456274.805810000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 33.000 microseconds]
+    [Time delta from previous displayed frame: 33.000 microseconds]
+    [Time since reference or first frame: 2 minutes, 3.660416000 seconds]
+    Frame Number: 62598
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6250, Dst Port: 80, Seq: 199, Ack: 265, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  64162 126.585140     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      74     6250 -> 80 [FIN, ACK] Seq=199 Ack=265 Win=65272 Len=0
+
+Frame 64162: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:17.730534000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:17.730534000 UTC
+    Epoch Arrival Time: 1774456277.730534000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 4.733000 milliseconds]
+    [Time delta from previous displayed frame: 2.924724000 seconds]
+    [Time since reference or first frame: 2 minutes, 6.585140000 seconds]
+    Frame Number: 64162
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6250, Dst Port: 80, Seq: 199, Ack: 265, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  64163 126.593359     2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd TCP      74     80 -> 6250 [ACK] Seq=265 Ack=200 Win=5561 Len=0
+
+Frame 64163: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:17.738753000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:17.738753000 UTC
+    Epoch Arrival Time: 1774456277.738753000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 8.219000 milliseconds]
+    [Time delta from previous displayed frame: 8.219000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 6.593359000 seconds]
+    Frame Number: 64163
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: Espressif_0e:73:6c (28:05:a5:0e:73:6c), Dst: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c, Dst: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd
+Transmission Control Protocol, Src Port: 80, Dst Port: 6250, Seq: 265, Ack: 200, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  85498 166.512013     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      86     6336 -> 23 [SYN] Seq=0 Win=65535 Len=0 MSS=1412 WS=256 SACK_PERM
+
+Frame 85498: Packet, 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:57.657407000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:57.657407000 UTC
+    Epoch Arrival Time: 1774456317.657407000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 2.383000 milliseconds]
+    [Time delta from previous displayed frame: 39.918654000 seconds]
+    [Time since reference or first frame: 2 minutes, 46.512013000 seconds]
+    Frame Number: 85498
+    Frame Length: 86 bytes (688 bits)
+    Capture Length: 86 bytes (688 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  85499 166.520588     2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd TCP      78     23 -> 6336 [SYN, ACK] Seq=0 Ack=1 Win=5760 Len=0 MSS=1412
+
+Frame 85499: Packet, 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:57.665982000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:57.665982000 UTC
+    Epoch Arrival Time: 1774456317.665982000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 8.575000 milliseconds]
+    [Time delta from previous displayed frame: 8.575000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 46.520588000 seconds]
+    Frame Number: 85499
+    Frame Length: 78 bytes (624 bits)
+    Capture Length: 78 bytes (624 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: Espressif_0e:73:6c (28:05:a5:0e:73:6c), Dst: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c, Dst: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd
+Transmission Control Protocol, Src Port: 23, Dst Port: 6336, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  85500 166.520657     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      74     6336 -> 23 [ACK] Seq=1 Ack=1 Win=65535 Len=0
+
+Frame 85500: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:57.666051000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:57.666051000 UTC
+    Epoch Arrival Time: 1774456317.666051000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 69.000 microseconds]
+    [Time delta from previous displayed frame: 69.000 microseconds]
+    [Time since reference or first frame: 2 minutes, 46.520657000 seconds]
+    Frame Number: 85500
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  85503 166.530566     2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd TELNET   113    39 bytes data
+
+Frame 85503: Packet, 113 bytes on wire (904 bits), 113 bytes captured (904 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:57.675960000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:57.675960000 UTC
+    Epoch Arrival Time: 1774456317.675960000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 5.904000 milliseconds]
+    [Time delta from previous displayed frame: 9.909000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 46.530566000 seconds]
+    Frame Number: 85503
+    Frame Length: 113 bytes (904 bits)
+    Capture Length: 113 bytes (904 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:telnet]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: Espressif_0e:73:6c (28:05:a5:0e:73:6c), Dst: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c, Dst: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd
+Transmission Control Protocol, Src Port: 23, Dst Port: 6336, Seq: 1, Ack: 1, Len: 39
+Telnet
+
+No.     Time           Source                Destination           Protocol Length Info
+  85536 166.580399     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      74     6336 -> 23 [ACK] Seq=1 Ack=40 Win=65496 Len=0
+
+Frame 85536: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:31:57.725793000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:31:57.725793000 UTC
+    Epoch Arrival Time: 1774456317.725793000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 182.000 microseconds]
+    [Time delta from previous displayed frame: 49.833000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 46.580399000 seconds]
+    Frame Number: 85536
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 1, Ack: 40, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  86964 169.351640     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TELNET   81     7 bytes data
+
+Frame 86964: Packet, 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:32:00.497034000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:32:00.497034000 UTC
+    Epoch Arrival Time: 1774456320.497034000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 6.060000 milliseconds]
+    [Time delta from previous displayed frame: 2.771241000 seconds]
+    [Time since reference or first frame: 2 minutes, 49.351640000 seconds]
+    Frame Number: 86964
+    Frame Length: 81 bytes (648 bits)
+    Capture Length: 81 bytes (648 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:telnet]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 1, Ack: 40, Len: 7
+Telnet
+
+No.     Time           Source                Destination           Protocol Length Info
+  86966 169.361376     2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd TELNET   84     10 bytes data
+
+Frame 86966: Packet, 84 bytes on wire (672 bits), 84 bytes captured (672 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:32:00.506770000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:32:00.506770000 UTC
+    Epoch Arrival Time: 1774456320.506770000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 1.021000 milliseconds]
+    [Time delta from previous displayed frame: 9.736000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 49.361376000 seconds]
+    Frame Number: 86966
+    Frame Length: 84 bytes (672 bits)
+    Capture Length: 84 bytes (672 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:telnet]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: Espressif_0e:73:6c (28:05:a5:0e:73:6c), Dst: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c, Dst: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd
+Transmission Control Protocol, Src Port: 23, Dst Port: 6336, Seq: 40, Ack: 8, Len: 10
+Telnet
+
+No.     Time           Source                Destination           Protocol Length Info
+  86992 169.411843     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      74     6336 -> 23 [ACK] Seq=8 Ack=50 Win=65486 Len=0
+
+Frame 86992: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:32:00.557237000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:32:00.557237000 UTC
+    Epoch Arrival Time: 1774456320.557237000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 9.385000 milliseconds]
+    [Time delta from previous displayed frame: 50.467000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 49.411843000 seconds]
+    Frame Number: 86992
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 8, Ack: 50, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  87954 171.420833     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TELNET   81     7 bytes data
+
+Frame 87954: Packet, 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:32:02.566227000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:32:02.566227000 UTC
+    Epoch Arrival Time: 1774456322.566227000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 741.000 microseconds]
+    [Time delta from previous displayed frame: 2.008990000 seconds]
+    [Time since reference or first frame: 2 minutes, 51.420833000 seconds]
+    Frame Number: 87954
+    Frame Length: 81 bytes (648 bits)
+    Capture Length: 81 bytes (648 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:telnet]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 8, Ack: 50, Len: 7
+Telnet
+
+No.     Time           Source                Destination           Protocol Length Info
+  87962 171.439640     2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd TELNET   119    45 bytes data
+
+Frame 87962: Packet, 119 bytes on wire (952 bits), 119 bytes captured (952 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:32:02.585034000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:32:02.585034000 UTC
+    Epoch Arrival Time: 1774456322.585034000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 3.458000 milliseconds]
+    [Time delta from previous displayed frame: 18.807000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 51.439640000 seconds]
+    Frame Number: 87962
+    Frame Length: 119 bytes (952 bits)
+    Capture Length: 119 bytes (952 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:telnet]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: Espressif_0e:73:6c (28:05:a5:0e:73:6c), Dst: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c, Dst: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd
+Transmission Control Protocol, Src Port: 23, Dst Port: 6336, Seq: 50, Ack: 15, Len: 45
+Telnet
+
+No.     Time           Source                Destination           Protocol Length Info
+  87977 171.482457     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      74     6336 -> 23 [ACK] Seq=15 Ack=95 Win=65441 Len=0
+
+Frame 87977: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:32:02.627851000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:32:02.627851000 UTC
+    Epoch Arrival Time: 1774456322.627851000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 2.080000 milliseconds]
+    [Time delta from previous displayed frame: 42.817000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 51.482457000 seconds]
+    Frame Number: 87977
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 15, Ack: 95, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  92324 179.380451     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TELNET   82     8 bytes data
+
+Frame 92324: Packet, 82 bytes on wire (656 bits), 82 bytes captured (656 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:32:10.525845000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:32:10.525845000 UTC
+    Epoch Arrival Time: 1774456330.525845000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 183.000 microseconds]
+    [Time delta from previous displayed frame: 7.897994000 seconds]
+    [Time since reference or first frame: 2 minutes, 59.380451000 seconds]
+    Frame Number: 92324
+    Frame Length: 82 bytes (656 bits)
+    Capture Length: 82 bytes (656 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:telnet]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 15, Ack: 95, Len: 8
+Telnet
+
+No.     Time           Source                Destination           Protocol Length Info
+  92325 179.391380     2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd TELNET   231    157 bytes data
+
+Frame 92325: Packet, 231 bytes on wire (1848 bits), 231 bytes captured (1848 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:32:10.536774000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:32:10.536774000 UTC
+    Epoch Arrival Time: 1774456330.536774000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 10.929000 milliseconds]
+    [Time delta from previous displayed frame: 10.929000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 59.391380000 seconds]
+    Frame Number: 92325
+    Frame Length: 231 bytes (1848 bits)
+    Capture Length: 231 bytes (1848 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:telnet]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: Espressif_0e:73:6c (28:05:a5:0e:73:6c), Dst: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c, Dst: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd
+Transmission Control Protocol, Src Port: 23, Dst Port: 6336, Seq: 95, Ack: 23, Len: 157
+Telnet
+
+No.     Time           Source                Destination           Protocol Length Info
+  92344 179.444809     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      74     6336 -> 23 [ACK] Seq=23 Ack=252 Win=65284 Len=0
+
+Frame 92344: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:32:10.590203000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:32:10.590203000 UTC
+    Epoch Arrival Time: 1774456330.590203000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 4.653000 milliseconds]
+    [Time delta from previous displayed frame: 53.429000 milliseconds]
+    [Time since reference or first frame: 2 minutes, 59.444809000 seconds]
+    Frame Number: 92344
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 23, Ack: 252, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+ 163041 299.395889     2a02:21b4:9ae1:b100:910e:1492:de64:3bbd 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c TCP      74     6336 -> 23 [RST, ACK] Seq=23 Ack=252 Win=0 Len=0
+
+Frame 163041: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{BE969710-4083-4F49-A1F4-592492C244C8})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 25, 2026 17:34:10.541283000 W. Europe Standard Time
+    UTC Arrival Time: Mar 25, 2026 16:34:10.541283000 UTC
+    Epoch Arrival Time: 1774456450.541283000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 12.566000 milliseconds]
+    [Time delta from previous displayed frame: 1 minute, 59.951080000 seconds]
+    [Time since reference or first frame: 4 minutes, 59.395889000 seconds]
+    Frame Number: 163041
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP RST]
+    [Coloring Rule String: tcp.flags.reset eq 1]
+Ethernet II, Src: AzureWaveTec_b3:4c:c3 (e8:fb:1c:b3:4c:c3), Dst: Espressif_0e:73:6c (28:05:a5:0e:73:6c)
+Internet Protocol Version 6, Src: 2a02:21b4:9ae1:b100:910e:1492:de64:3bbd, Dst: 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Transmission Control Protocol, Src Port: 6336, Dst Port: 23, Seq: 23, Ack: 252, Len: 0
+
+
+

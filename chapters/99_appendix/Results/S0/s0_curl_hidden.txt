@@ -1,0 +1,26 @@
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : <html><body><h1>Hidden Admin Interface</h1><p>Diagnostic Mode: ENABLED</p><p>Debug Access: 
+                    TRUE</p><p>Warning: undocumented endpoint</p><p>MAC: 28:05:A5:0E:73:6C</p></body></html>
+RawContent        : HTTP/1.1 200 OK
+                    Connection: close
+                    Content-Length: 179
+                    Content-Type: text/html
+                    
+                    <html><body><h1>Hidden Admin Interface</h1><p>Diagnostic Mode: ENABLED</p><p>Debug Access: 
+                    TRUE</p><p>Warning: undoc...
+Forms             : {}
+Headers           : {[Connection, close], [Content-Length, 179], [Content-Type, text/html]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 179
+
+
+
+
+
+

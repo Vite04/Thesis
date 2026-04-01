@@ -1,0 +1,38 @@
+root@thesis:~# sudo tcpdump -i any -nn "ip6 and host $ESP32 and icmp6" > s1_tcpdump_icmp.txt 2>&1 &
+TCPDUMP_PID=$!
+[1] 7300
+root@thesis:~# ESP32="2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C"
+[1]+  Exit 1                  sudo tcpdump -i any -nn "ip6 and host $ESP32 and icmp6" > s1_tcpdump_icmp.txt 2>&1
+root@thesis:~# ESP32="2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C"
+root@thesis:~# sudo tcpdump -i any -nn "ip6 and host $ESP32 and icmp6"
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+16:12:13.388503 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 1, length 64
+16:12:13.430383 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 1, length 64
+16:12:14.389759 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 2, length 64
+16:12:14.433801 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 2, length 64
+16:12:15.391135 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 3, length 64
+16:12:15.429723 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 3, length 64
+16:12:16.392144 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 4, length 64
+16:12:16.431250 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 4, length 64
+16:12:17.393534 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 5, length 64
+16:12:17.432300 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 5, length 64
+16:12:18.395674 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 6, length 64
+16:12:18.437300 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 6, length 64
+16:12:19.397667 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 7, length 64
+16:12:19.436294 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 7, length 64
+16:12:20.399552 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 8, length 64
+16:12:20.443318 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 8, length 64
+16:12:21.401575 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 9, length 64
+16:12:21.442563 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 9, length 64
+16:12:22.402796 eth0  Out IP6 2a01:4f9:c014:5c1d::1 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c: ICMP6, echo request, id 7395, seq 10, length 64
+16:12:22.442819 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c > 2a01:4f9:c014:5c1d::1: ICMP6, echo reply, id 7395, seq 10, length 64
+^C
+20 packets captured
+21 packets received by filter
+0 packets dropped by kernel
+root@thesis:~#
+
+
+

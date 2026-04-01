@@ -1,0 +1,40 @@
+ssh :   % Total    % Received % Xferd  Average Speed   Time    Time     Time 
+ Current
+At line:1 char:1
++ ssh $VPS "curl -v --max-time 10 http://[$ESP32]/" 2>&1 | Tee-Object s ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Curre 
+   nt:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     
+0*   Trying [2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c]:80...
+
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     
+0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     
+0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     
+0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     
+0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     
+0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     
+0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     
+0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     
+0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     
+0* Connection timed out after 10002 milliseconds
+
+  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     
+0
+* Closing connection
+curl: (28) Connection timed out after 10002 milliseconds
+
+
+

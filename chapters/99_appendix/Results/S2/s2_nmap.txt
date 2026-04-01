@@ -1,0 +1,12 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-03-25 16:18 UTC
+Nmap scan report for 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Host is up, received user-set (0.045s latency).
+
+PORT   STATE SERVICE REASON
+23/tcp open  telnet  syn-ack
+80/tcp open  http    syn-ack
+
+Nmap done: 1 IP address (1 host up) scanned in 0.26 seconds
+
+
+

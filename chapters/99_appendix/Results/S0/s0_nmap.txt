@@ -1,0 +1,12 @@
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-25 16:53 +0100
+Nmap scan report for esp32-0e736c.home (2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c)
+Host is up (0.0084s latency).
+
+PORT   STATE SERVICE
+23/tcp open  telnet
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.13 seconds
+
+
+

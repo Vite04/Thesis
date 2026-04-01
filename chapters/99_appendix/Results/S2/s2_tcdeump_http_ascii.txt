@@ -1,0 +1,54 @@
+root@thesis:~# sudo tcpdump -i any -nn -A -c 20 "ip6 and host 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C and tcp port 80" &
+sleep 1 && curl -v "http://[2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C]/hidden_admin"
+wait
+[1] 7925
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+*   Trying [2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c]:80...
+16:24:29.728803 eth0  Out IP6 2a01:4f9:c014:5c1d::1.45744 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80: Flags [S], seq 2172372251, win 64800, options [mss 1440,sackOK,TS val 4111632677 ecr 0,nop,wscale 7], length 0
+`....(.@*.....\.........*.!.....*.....sl...P.{......... $t.........
+...%........
+* Connected to 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C (2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c) port 80
+> GET /hidden_admin HTTP/1.1
+> Host: [2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C]
+> User-Agent: curl/8.5.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: text/html
+< Content-Length: 179
+< Connection: close
+<
+* Closing connection
+<html><body><h1>Hidden Admin Interface</h1><p>Diagnostic Mode: ENABLED</p><p>Debug Access: TRUE</p><p>Warning: undocumented endpoint</p><p>MAC: 28:05:A5:0E:73:6C</p></body></html>16:24:29.783715 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80 > 2a01:4f9:c014:5c1d::1.45744: Flags [S.], seq 3950055805, ack 2172372252, win 5760, options [mss 1412], length 0
+`......0*.!.....*.....sl*.....\..........P...q.}.{..`...f.......
+16:24:29.783781 eth0  Out IP6 2a01:4f9:c014:5c1d::1.45744 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80: Flags [.], ack 1, win 64800, length 0
+`......@*.....\.........*.!.....*.....sl...P.{...q.~P.. $`..
+16:24:29.783943 eth0  Out IP6 2a01:4f9:c014:5c1d::1.45744 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80: Flags [P.], seq 1:117, ack 1, win 64800, length 116: HTTP: GET /hidden_admin HTTP/1.1
+`......@*.....\.........*.!.....*.....sl...P.{...q.~P.. $...GET /hidden_admin HTTP/1.1
+Host: [2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C]
+User-Agent: curl/8.5.0
+Accept: */*
+
+
+16:24:29.837630 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80 > 2a01:4f9:c014:5c1d::1.45744: Flags [P.], seq 1:264, ack 117, win 5644, length 263: HTTP: HTTP/1.1 200 OK
+`......0*.!.....*.....sl*.....\..........P...q.~.{..P....d..HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 179
+Connection: close
+
+<html><body><h1>Hidden Admin Interface</h1><p>Diagnostic Mode: ENABLED</p><p>Debug Access: TRUE</p><p>Warning: undocumented endpoint</p><p>MAC: 28:05:A5:0E:73:6C</p></body></html>
+16:24:29.837688 eth0  Out IP6 2a01:4f9:c014:5c1d::1.45744 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80: Flags [.], ack 264, win 64537, length 0
+`......@*.....\.........*.!.....*.....sl...P.{...q..P...$`..
+16:24:29.837858 eth0  Out IP6 2a01:4f9:c014:5c1d::1.45744 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80: Flags [F.], seq 117, ack 264, win 64537, length 0
+`......@*.....\.........*.!.....*.....sl...P.{...q..P...$`..
+16:24:29.839556 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80 > 2a01:4f9:c014:5c1d::1.45744: Flags [F.], seq 264, ack 117, win 5644, length 0
+`......0*.!.....*.....sl*.....\..........P...q...{..P...}~..
+16:24:29.839570 eth0  Out IP6 2a01:4f9:c014:5c1d::1.45744 > 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80: Flags [.], ack 265, win 64536, length 0
+`......@*.....\.........*.!.....*.....sl...P.{...q..P...$`..
+16:24:29.891632 eth0  In  IP6 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c.80 > 2a01:4f9:c014:5c1d::1.45744: Flags [.], ack 118, win 5643, length 0
+`......0*.!.....*.....sl*.....\..........P...q...{..P...}~..
+
+
+

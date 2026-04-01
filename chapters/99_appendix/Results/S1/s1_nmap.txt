@@ -1,0 +1,12 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-03-25 16:12 UTC
+Nmap scan report for 2a02:21b4:9ae1:b100:2a05:a5ff:fe0e:736c
+Host is up, received user-set.
+
+PORT   STATE    SERVICE REASON
+23/tcp filtered telnet  no-response
+80/tcp filtered http    no-response
+
+Nmap done: 1 IP address (1 host up) scanned in 3.46 seconds
+
+
+
