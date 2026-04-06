@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Experimental Scenarios}
+\label{tab:experimental-scenarios}
+\begin{tabular}{p{0.20\textwidth} p{0.12\textwidth} p{0.22\textwidth} p{0.12\textwidth} p{0.28\textwidth}}
+\hline
+\textbf{Scenario} & \textbf{Firewall State} & \textbf{Access Origin / Observer Position} & \textbf{IP Context} & \textbf{Objective} \\
+\hline
+S0 — Internal Baseline & not relevant & internal host & IPv6 local environment & confirm device identity, global IPv6 acquisition, and local availability of the implemented services \\
+S1 — External IPv6 with Firewall Enabled & ON & external VPS & IPv6 & evaluate whether the device remains observable from outside the residential network despite TCP service filtering \\
+S2 — External IPv6 with Firewall Disabled & OFF & external VPS & IPv6 & evaluate whether the same global IPv6 address enables effective access to HTTP, Telnet, and the hidden endpoint once perimeter filtering is removed \\
+S3 — Local Passive Observation & not relevant & internal passive observer & IPv6 local traffic & determine whether HTTP and Telnet communications remain visible in plaintext inside the LAN \\
+S4 — IPv4 Baseline without Port Forwarding & default residential configuration / no port forwarding & external VPS & IPv4 & establish a contrast with residential IPv4 by evaluating whether equivalent direct inbound access exists without explicit port forwarding \\
+\hline
+\end{tabular}
+\end{table}
