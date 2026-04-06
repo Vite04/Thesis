@@ -4,6 +4,7 @@
 \RequirePackage{uzh_spins}
 \RequirePackage{titlesec}
 \RequirePackage{fancyhdr}
+\RequirePackage{flafter}
 \setlength{\textwidth}{15cm}
 \setlength{\textheight}{21.3cm}
 \setlength{\evensidemargin}{-6mm}
@@ -14,6 +15,8 @@
 \setlength{\textfloatsep}{2.5em plus 2pt minus 4pt}
 \setlength{\intextsep}{2em}
 \setlength{\doublerulesep}{0pt}
+\def\fps@table{htbp}
+\def\fps@figure{htbp}
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ \ #1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection \ \ #1}}

@@ -1,10 +1,15 @@
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
 \ProvidesPackage{uzh_spins}[2026/01/26 v1.0 UZH SPINS styles]
 \usepackage[english]{babel}
-\usepackage{color}
+\usepackage[table]{xcolor}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \usepackage{listings}
 \usepackage{xspace}
 \usepackage[backend=bibtex,style=ieee,sorting=none]{biblatex}
@@ -13,6 +18,8 @@
 \usepackage{url}
 \urlstyle{same}
 \usepackage{csquotes}
+\definecolor{uzhblue}{RGB}{0,122,190}
+\definecolor{tableheader}{RGB}{235, 245, 255}
 \definecolor{stringcolor}{RGB}{5,60,220}
 \definecolor{keywordcolor}{RGB}{127,0,85}
 \definecolor{javadoccolor}{RGB}{63,95,191}

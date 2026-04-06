@@ -1,15 +1,17 @@
-\begin{table}[htbp]
-\centering
-\caption{Testbed Components}
-\label{tab:testbed-components}
-\begin{tabular}{p{0.19\textwidth} p{0.21\textwidth} p{0.30\textwidth} p{0.25\textwidth}}
-\hline
-\textbf{Component} & \textbf{Role} & \textbf{Network Position / Addressing Context} & \textbf{Notes} \\
-\hline
-ESP32 microcontroller & Target IoT device & Connected to the residential WiFi network; acquires a global IPv6 and a link-local IPv6 address & Runs custom firmware; exposes HTTP on port 80 and a Telnet-like service on port 23 \\
-Residential router (CPE) & Perimeter network controller & Provides native IPv6 connectivity and a public static IPv4 address & IPv6 firewall state is configurable and constitutes a key experimental condition \\
-Internal host & Local baseline client and passive observer & Same LAN / same local prefix as the ESP32 & Used for local validation and local traffic inspection scenarios \\
-External VPS & External observation and interaction host & Located outside the residential network with native public IPv6 connectivity & Used for external ICMPv6, TCP, HTTP, and Telnet interactions; supports the IPv4 comparison scenario \\
-\hline
-\end{tabular}
+\begin{table}[H]
+    \centering
+    \caption{Testbed Components}
+    \label{tab:testbed-components}
+    \rowcolors{2}{white}{tableheader}
+    \begin{tabularx}{\textwidth}{p{0.18\textwidth} p{0.18\textwidth} L L}
+        \toprule
+        \rowcolor{uzhblue}
+        \textbf{\color{white}Component} & \textbf{\color{white}Role} & \textbf{\color{white}Network Position} & \textbf{\color{white}Notes} \\
+        \midrule
+        ESP32 & Target IoT device & Residential WiFi; acquires global and link-local IPv6 & Runs custom firmware; exposes HTTP (80) and Telnet (23) \\
+        Residential router & Perimeter controller & Provides native IPv6 and public static IPv4 & Configurable IPv6 firewall (key independent variable) \\
+        Internal host & Local observer & Same LAN as the ESP32 & Used for local validation and traffic inspection \\
+        External VPS & External host & Outside residential network; native public IPv6 & Used for external interactions and IPv4 comparison \\
+        \bottomrule
+    \end{tabularx}
 \end{table}

@@ -1,0 +1,33 @@
+---
+title: "Thesis LaTeX Environment Bootstrap"
+output: html_document
+---
+
+```{r}
+if (!requireNamespace("tinytex", quietly = TRUE)) install.packages("tinytex")
+if (!tinytex::is_tinytex()) tinytex::install_tinytex()
+pkgs <- c(
+  "babel-english",
+  "xcolor",
+  "colortbl",
+  "float",
+  "booktabs",
+  "tabularx",
+  "titlesec",
+  "fancyhdr",
+  "flafter",
+  "listings",
+  "xspace",
+  "csquotes",
+  "hyperref",
+  "biblatex",
+  "biblatex-ieee",
+  "biber",
+  "url",
+  "lm",
+  "psnfss",
+  "epstopdf-pkg"
+)
+tinytex::tlmgr_install(pkgs)
+```
+

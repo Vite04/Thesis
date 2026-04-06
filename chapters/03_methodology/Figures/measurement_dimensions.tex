@@ -1,17 +1,19 @@
-\begin{table}[htbp]
-\centering
-\caption{Measurement Dimensions and Evidence Sources}
-\label{tab:measurement-dimensions}
-\begin{tabular}{p{0.24\textwidth} p{0.38\textwidth} p{0.30\textwidth}}
-\hline
-\textbf{Measurement Dimension} & \textbf{Operational Evidence} & \textbf{Primary Tools / Sources} \\
-\hline
-Network reachability & valid ICMP responses under the tested configuration & ping6, ping, serial logs \\
-TCP service state & port state observed as open, filtered, or otherwise unreachable & nmap, TCP connection attempts \\
-HTTP accessibility & valid HTTP response received from the root endpoint or hidden endpoint & curl, HTTP output, serial logs \\
-Telnet accessibility & successful session establishment and application-layer interaction & Telnet transcript, serial logs \\
-Traffic visibility & readable application-layer content visible in packet captures without decryption & tcpdump, Wireshark \\
-Device-side confirmation & locally recorded evidence of inbound connections, endpoint access, and authentication attempts & ESP32 serial output, firmware logs \\
-\hline
-\end{tabular}
+\begin{table}[H]
+    \centering
+    \caption{Measurement Dimensions and Evidence Sources}
+    \label{tab:measurement-dimensions}
+    \rowcolors{2}{white}{tableheader}
+    \begin{tabularx}{\textwidth}{L L L}
+        \toprule
+        \rowcolor{uzhblue}
+        \textbf{\color{white}Measurement Dimension} & \textbf{\color{white}Operational Evidence} & \textbf{\color{white}Primary Tools / Sources} \\
+        \midrule
+        Network reachability & valid ICMP responses under the tested configuration & ping6, ping, serial logs \\
+        TCP service state & port state observed as open, filtered, or closed/unreachable & nmap, TCP connection attempts \\
+        HTTP accessibility & valid HTTP response received from the root endpoint or hidden endpoint & curl, HTTP output, serial logs \\
+        Telnet accessibility & successful session establishment and application-layer interaction & Telnet transcript, serial logs \\
+        Traffic visibility & readable application-layer content visible in packet captures without decryption & tcpdump, Wireshark \\
+        Device-side logging evidence & locally recorded evidence of inbound connections, endpoint access, and authentication attempts & ESP32 serial output, firmware logs \\
+        \bottomrule
+    \end{tabularx}
 \end{table}
