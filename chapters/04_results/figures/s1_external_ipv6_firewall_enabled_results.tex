@@ -1,0 +1,19 @@
+\begin{table}[H]
+    \centering
+    \caption{S1 Results: External IPv6, Firewall Enabled}
+    \label{tab:s1-external-ipv6-fw-enabled-results}
+    \rowcolors{2}{white}{tableheader}
+    \begin{tabularx}{\textwidth}{p{0.22\textwidth} p{0.22\textwidth} L}
+        \toprule
+        \rowcolor{uzhblue}
+        \textbf{\color{white}Test} & \textbf{\color{white}Tool} & \textbf{\color{white}Result} \\
+        \midrule
+        ICMPv6 reachability & ping6 -c 10 & 10/10 replies, 0\% loss, avg RTT 40.8 ms \\
+        Port 80 state & nmap -6 -sT --reason & filtered (no-response) \\
+        Port 23 state & nmap -6 -sT --reason & filtered (no-response) \\
+        HTTP root (/) & curl --max-time 10 & connection timed out after 10 s \\
+        HTTP hidden endpoint (/hidden\_admin) & curl --max-time 10 & connection timed out after 10 s \\
+        Telnet session & ncat & no connection established \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

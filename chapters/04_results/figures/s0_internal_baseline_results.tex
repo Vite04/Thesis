@@ -1,0 +1,19 @@
+\begin{table}[H]
+    \centering
+    \caption{S0 Internal Baseline Results}
+    \label{tab:s0-internal-baseline-results}
+    \rowcolors{2}{white}{tableheader}
+    \begin{tabularx}{\textwidth}{p{0.22\textwidth} p{0.18\textwidth} L}
+        \toprule
+        \rowcolor{uzhblue}
+        \textbf{\color{white}Test} & \textbf{\color{white}Tool} & \textbf{\color{white}Result} \\
+        \midrule
+        ICMPv6 reachability & ping6 & 4/4 replies; initial RTT spike, then stabilized around 7 ms \\
+        Port 80 state & nmap -6 -sT & open \\
+        Port 23 state & nmap -6 -sT & open \\
+        HTTP root (/) & curl & HTTP 200 OK; dashboard returns MAC and IPv6 information \\
+        HTTP hidden endpoint (/hidden\_admin) & curl & HTTP 200 OK; Diagnostic Mode: ENABLED \\
+        Telnet session & ncat & connection established; login with admin/admin successful; status command executed \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}[H]
+    \centering
+    \caption{S3 Results: Local Passive Observation}
+    \label{tab:s3-local-passive-observation-results}
+    \rowcolors{2}{white}{tableheader}
+    \begin{tabularx}{\textwidth}{p{0.28\textwidth} p{0.20\textwidth} L}
+        \toprule
+        \rowcolor{uzhblue}
+        \textbf{\color{white}Observation} & \textbf{\color{white}Tool} & \textbf{\color{white}Result} \\
+        \midrule
+        HTTP request visible in capture & Wireshark & GET /hidden\_admin HTTP/1.1 visible in packet payload \\
+        HTTP response visible in capture & Wireshark & full HTML body visible, including Diagnostic Mode: ENABLED and MAC \\
+        Telnet banner visible & Wireshark & Password: prompt visible in ASCII payload \\
+        Telnet credential visible & Wireshark & credential admin visible in plaintext in packet payload \\
+        MAC address in Ethernet frame & Wireshark & 28:05:A5:0E:73:6C visible as source address in frame header \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

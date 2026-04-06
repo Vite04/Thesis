@@ -1,0 +1,25 @@
+\begin{table}[H]
+    \centering
+    \caption{Cross-Scenario Comparative Results}
+    \label{tab:cross-scenario-comparative-results}
+    \rowcolors{2}{white}{tableheader}
+    \begin{tabularx}{\textwidth}{p{0.24\textwidth} p{0.12\textwidth} p{0.12\textwidth} p{0.12\textwidth} p{0.22\textwidth} L}
+        \toprule
+        \rowcolor{uzhblue}
+        \textbf{\color{white}Metric} & \textbf{\color{white}S0 Internal} & \textbf{\color{white}S1 FW ON} & \textbf{\color{white}S2 FW OFF} & \textbf{\color{white}S3 Local Passive Observation} & \textbf{\color{white}S4 IPv4} \\
+        \midrule
+        Global IPv6 assigned & ✓ & ✓ & ✓ & ✓ & — \\
+        EUI-64 MAC derivable & ✓ & ✓ & ✓ & ✓ & — \\
+        ICMPv6 response rate & 100\% & 100\% & 100\% & — & — \\
+        Mean RTT & initial spike, then \textasciitilde7 ms & 40.8 ms & 40.4 ms & — & 35.6 ms \\
+        Port 80 state & open & filtered & open & — & filtered \\
+        Port 23 state & open & filtered & open & — & filtered \\
+        HTTP root accessible & ✓ & ✗ & ✓ & — & ✗ \\
+        Hidden endpoint accessible & ✓ & ✗ & ✓ & — & ✗ \\
+        Telnet session established & ✓ & ✗ & ✓ & ✓ & ✗ \\
+        Plaintext payload visible in capture & — & — & ✓ & ✓ & — \\
+        Credentials visible in capture & — & — & ✓ & ✓ & — \\
+        Effective service access under tested condition & ✓ (local) & ✗ & ✓ & ✓ (local capture-supported interaction) & ✗ \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
