@@ -3,23 +3,25 @@
     \caption{Cross-Scenario Comparative Results}
     \label{tab:cross-scenario-comparative-results}
     \rowcolors{2}{white}{tableheader}
-    \begin{tabularx}{\textwidth}{p{0.24\textwidth} p{0.12\textwidth} p{0.12\textwidth} p{0.12\textwidth} p{0.22\textwidth} L}
+    \footnotesize
+    \begin{tabularx}{\textwidth}{p{0.25\textwidth} c c c p{0.14\textwidth} c}
         \toprule
         \rowcolor{uzhblue}
-        \textbf{\color{white}Metric} & \textbf{\color{white}S0 Internal} & \textbf{\color{white}S1 FW ON} & \textbf{\color{white}S2 FW OFF} & \textbf{\color{white}S3 Local Passive Observation} & \textbf{\color{white}S4 IPv4} \\
+        \textbf{\color{white}Metric} & \textbf{\color{white}S0 Int.} & \textbf{\color{white}S1 Ext.} & \textbf{\color{white}S2 Ext.} & \textbf{\color{white}S3 Local} & \textbf{\color{white}S4 IPv4} \\
         \midrule
-        Global IPv6 assigned & ✓ & ✓ & ✓ & ✓ & — \\
-        EUI-64 MAC derivable & ✓ & ✓ & ✓ & ✓ & — \\
-        ICMPv6 response rate & 100\% & 100\% & 100\% & — & — \\
-        Mean RTT & initial spike, then \textasciitilde7 ms & 40.8 ms & 40.4 ms & — & 35.6 ms \\
-        Port 80 state & open & filtered & open & — & filtered \\
-        Port 23 state & open & filtered & open & — & filtered \\
-        HTTP root accessible & ✓ & ✗ & ✓ & — & ✗ \\
-        Hidden endpoint accessible & ✓ & ✗ & ✓ & — & ✗ \\
-        Telnet session established & ✓ & ✗ & ✓ & ✓ & ✗ \\
-        Plaintext payload visible in capture & — & — & ✓ & ✓ & — \\
-        Credentials visible in capture & — & — & ✓ & ✓ & — \\
-        Effective service access under tested condition & ✓ (local) & ✗ & ✓ & ✓ (local capture-supported interaction) & ✗ \\
+        Global IPv6 assigned & \checkmark & \checkmark & \checkmark & \checkmark & --- \\
+        EUI-64 MAC derivable & \checkmark & \checkmark & \checkmark & \checkmark & --- \\
+        ICMP response rate & 100\% & 100\% & 100\% & --- & --- \\
+        Mean RTT & 7 ms* & 40.8 ms & 40.4 ms & --- & 35.6 ms \\
+        Port 80 state & open & filtered & open & --- & filtered \\
+        Port 23 state & open & filtered & open & --- & filtered \\
+        HTTP root accessible & \checkmark & \ding{55} & \checkmark & --- & \ding{55} \\
+        Hidden endpoint accessible & \checkmark & \ding{55} & \checkmark & --- & \ding{55} \\
+        Telnet session established & \checkmark & \ding{55} & \checkmark & \checkmark & \ding{55} \\
+        Plaintext payload visible & --- & --- & \checkmark & \checkmark & --- \\
+        Credentials visible & --- & --- & \checkmark & \checkmark & --- \\
+        Full service access & \checkmark & \ding{55} & \checkmark & \checkmark & \ding{55} \\
         \bottomrule
     \end{tabularx}
 \end{table}
+*(after initial spike)

@@ -3,18 +3,18 @@
     \caption{S2 Results: External IPv6, Firewall Disabled}
     \label{tab:s2-external-ipv6-fw-disabled-results}
     \rowcolors{2}{white}{tableheader}
-    \begin{tabularx}{\textwidth}{p{0.22\textwidth} p{0.22\textwidth} L}
+    \begin{tabularx}{\textwidth}{p{0.22\textwidth} p{0.20\textwidth} L}
         \toprule
         \rowcolor{uzhblue}
         \textbf{\color{white}Test} & \textbf{\color{white}Tool} & \textbf{\color{white}Result} \\
         \midrule
-        ICMPv6 reachability & ping6 -c 10 & 10/10 replies, 0\% loss, avg RTT 40.4 ms \\
-        Port 80 state & nmap -6 -sT --reason & open (syn-ack) \\
-        Port 23 state & nmap -6 -sT --reason & open (syn-ack) \\
-        HTTP root (/) & curl & HTTP 200 OK; response includes MAC and IPv6 \\
-        HTTP hidden endpoint (/hidden\_admin) & curl & HTTP 200 OK; Diagnostic Mode: ENABLED \\
-        Telnet session & ncat & connection established; login with admin/admin successful \\
-        Plaintext HTTP in capture & tcpdump -A & GET /hidden\_admin and full HTTP response visible in ASCII \\
+        ICMPv6 reachability & \texttt{ping6 -c 10} & 10/10 replies, 0\% loss, avg RTT 40.4 ms \\
+        Port 80 state & \texttt{nmap -sT} & open (syn-ack) \\
+        Port 23 state & \texttt{nmap -sT} & open (syn-ack) \\
+        HTTP root (\texttt{/}) & \texttt{curl} & HTTP 200 OK; response includes MAC and IPv6 \\
+        HTTP hidden endpoint (\texttt{/hidden\_admin}) & \texttt{curl} & HTTP 200 OK; Diagnostic Mode: ENABLED \\
+        Telnet session & \texttt{ncat} & connection established; login successful \\
+        Plaintext exposure & \texttt{tcpdump -A} & \texttt{GET /hidden\_admin} and payload visible in capture \\
         \bottomrule
     \end{tabularx}
 \end{table}

@@ -8,10 +8,10 @@
         \rowcolor{uzhblue}
         \textbf{\color{white}Test} & \textbf{\color{white}Tool} & \textbf{\color{white}Result} \\
         \midrule
-        IPv4 reachability & ping -c 5 & 5/5 replies from router, avg RTT 35.6 ms \\
-        Port 80 state & nmap -sT --reason & filtered (no-response) \\
-        Port 23 state & nmap -sT --reason & filtered (no-response) \\
-        HTTP root (/) & curl --max-time 10 & connection timed out after 10 s \\
+        IPv4 reachability & \texttt{ping -c 5} & 5/5 replies from router, avg RTT 35.6 ms \\
+        Port 80 state & \texttt{nmap -sT} & filtered (no-response) \\
+        Port 23 state & \texttt{nmap -sT} & filtered (no-response) \\
+        HTTP root (\texttt{/}) & \texttt{curl} & connection timed out after 10 s \\
         \bottomrule
     \end{tabularx}
 \end{table}
