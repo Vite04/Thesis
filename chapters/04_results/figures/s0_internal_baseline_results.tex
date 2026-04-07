@@ -11,9 +11,9 @@
         ICMPv6 reachability & \texttt{ping6} & 4/4 replies; initial RTT spike, then stabilized around 7 ms \\
         Port 80 state & \texttt{nmap -6 -sT} & open \\
         Port 23 state & \texttt{nmap -6 -sT} & open \\
-        HTTP root (\texttt{/}) & \texttt{curl} & HTTP 200 OK; dashboard returns MAC and IPv6 information \\
-        HTTP hidden endpoint (\texttt{/hidden\_admin}) & \texttt{curl} & HTTP 200 OK; Diagnostic Mode: ENABLED \\
-        Telnet session & \texttt{ncat} & connection established; login successful; status command executed \\
+        HTTP root (\texttt{/}) & \texttt{curl} & HTTP 200 OK (MAC + IPv6 information) \\
+        HTTP hidden endpoint (\texttt{/hidden\_admin}) & \texttt{curl} & HTTP 200 OK (Diagnostic Mode: ENABLED) \\
+        Telnet session & \texttt{ncat} & credentials transmitted and accepted in plaintext \\
         \bottomrule
     \end{tabularx}
 \end{table}

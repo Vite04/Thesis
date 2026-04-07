@@ -8,11 +8,11 @@
         \rowcolor{uzhblue}
         \textbf{\color{white}Observation} & \textbf{\color{white}Tool} & \textbf{\color{white}Result} \\
         \midrule
-        HTTP request & Wireshark & \texttt{GET /hidden\_admin} visible in packet payload \\
-        HTTP response & Wireshark & HTML body visible, including Diagnostic Mode: ENABLED \\
-        Telnet banner & Wireshark & \texttt{Password:} prompt visible in ASCII payload \\
-        Telnet credential & Wireshark & \texttt{admin} credential visible in plaintext payload \\
-        MAC address & Wireshark & \texttt{28:05:A5:0E:73:6C} as source in frame header \\
+        HTTP request & Wireshark & full HTTP request observable in plaintext \\
+        HTTP response & Wireshark & full HTTP response observable in plaintext \\
+        Telnet banner & Wireshark & Password prompt visible in ASCII payload \\
+        Telnet credential & Wireshark & credentials transmitted and accepted in plaintext \\
+        MAC address & Wireshark & MAC \texttt{28:05:A5:0E:73:6C} in frame header \\
         \bottomrule
     \end{tabularx}
 \end{table}
