@@ -4,7 +4,7 @@
     \label{tab:cross-scenario-comparative-results}
     \rowcolors{2}{white}{tableheader}
     \footnotesize
-    \begin{tabularx}{\textwidth}{p{0.25\textwidth} c c c p{0.14\textwidth} c}
+    \begin{tabularx}{\textwidth}{L c c c c c}
         \toprule
         \rowcolor{uzhblue}
         \textbf{\color{white}Metric} & \textbf{\color{white}S0 Int.} & \textbf{\color{white}S1 Ext.} & \textbf{\color{white}S2 Ext.} & \textbf{\color{white}S3 Local} & \textbf{\color{white}S4 IPv4} \\
@@ -12,7 +12,7 @@
         Global IPv6 assigned & \checkmark & \checkmark & \checkmark & \checkmark & --- \\
         EUI-64 MAC derivable & \checkmark & \checkmark & \checkmark & \checkmark & --- \\
         ICMP response rate & 100\% & 100\% & 100\% & --- & --- \\
-        Mean RTT & 7 ms* & 40.8 ms & 40.4 ms & --- & 35.6 ms \\
+        Mean RTT & 7 ms & 40.8 ms & 40.4 ms & --- & 35.6 ms \\
         Port 80 state & open & filtered & open & --- & filtered \\
         Port 23 state & open & filtered & open & --- & filtered \\
         HTTP root accessible & \checkmark & \ding{55} & \checkmark & --- & \ding{55} \\
@@ -24,4 +24,4 @@
         \bottomrule
     \end{tabularx}
 \end{table}
-*(after initial spike)
+
