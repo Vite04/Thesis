@@ -1,3 +1,42 @@
-  E S P 3 2   L e g a c y   T e l n e t   S e r v i c e   U s e r n a m e :   P a s s w o r d :     A c c e s s   g r a n t e d   T y p e   ' s t a t u s '   o r   ' e x i t '   >   D e v i c e   s t a t u s :   O N L I N E   M A C :   2 8 : 0 5 : A 5 : 0 E : 7 3 : 6 C   G l o b a l   I P v 6 :   2 A 0 2 : 2 1 B 4 : 9 A E 1 : B 1 0 0 : 2 A 0 5 : A 5 F F : F E 0 E : 7 3 6 C   H T T P   h i t s :   2   T e l n e t   s e s s i o n s :   3   L o g i n   s u c c e s s e s :   1   >   B y e   PS C:\Users\jmigu\Documents\Personales\UZH\Thesis\Thesis_code\Results\S0> ncat 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C 23 | Tee-Object s0_telnet.txtESP32 Legacy Telnet ServiceadminadminUsername: Password:Access grantedType 'status' or 'exit'status> Device status: ONLINEMAC: 28:05:A5:0E:73:6CGlobal IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736CHTTP hits: 2Telnet sessions: 3Login successes: 1exit> Bye
+  E S P 3 2   L e g a c y   T e l n e t   S e r v i c e 
+ 
+ U s e r n a m e :   P a s s w o r d :   
+ 
+ A c c e s s   g r a n t e d 
+ 
+ T y p e   ' s t a t u s '   o r   ' e x i t ' 
+ 
+ >   D e v i c e   s t a t u s :   O N L I N E 
+ 
+ M A C :   2 8 : 0 5 : A 5 : 0 E : 7 3 : 6 C 
+ 
+ G l o b a l   I P v 6 :   2 A 0 2 : 2 1 B 4 : 9 A E 1 : B 1 0 0 : 2 A 0 5 : A 5 F F : F E 0 E : 7 3 6 C 
+ 
+ H T T P   h i t s :   2 
+ 
+ T e l n e t   s e s s i o n s :   3 
+ 
+ L o g i n   s u c c e s s e s :   1 
+ 
+ >   B y e 
+ 
+ 
+
+PS C:\Users\jmigu\Documents\Personales\UZH\Thesis\Thesis_code\Results\S0> ncat 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C 23 | Tee-Object s0_telnet.txt
+ESP32 Legacy Telnet Service
+admin
+admin
+Username: Password:
+Access granted
+Type 'status' or 'exit'
+status
+> Device status: ONLINE
+MAC: 28:05:A5:0E:73:6C
+Global IPv6: 2A02:21B4:9AE1:B100:2A05:A5FF:FE0E:736C
+HTTP hits: 2
+Telnet sessions: 3
+Login successes: 1
+exit
+> Bye
 
 
