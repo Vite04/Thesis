@@ -1,7 +1,7 @@
 ssh :   % Total    % Received % Xferd  Average Speed   Time    Time     Time 
  Current
 At line:1 char:1
-+ ssh $VPS "curl -v --max-time 10 http://144.2.66.107/" 2>&1 | Tee-Obje ...
++ ssh $VPS "curl -v --max-time 10 http://198.51.100.7/" 2>&1 | Tee-Obje ...
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Curre 
    nt:String) [], RemoteException
@@ -10,7 +10,7 @@ At line:1 char:1
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     
-0*   Trying 144.2.66.107:80...
+0*   Trying 198.51.100.7:80...
 
   0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     
 0

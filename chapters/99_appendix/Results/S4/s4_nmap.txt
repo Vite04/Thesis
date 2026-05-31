@@ -1,5 +1,5 @@
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-03-25 16:48 UTC
-Nmap scan report for bbcs-66-107.pub.wingo.ch (144.2.66.107)
+Nmap scan report for host-198-51-100-7.example.com (198.51.100.7)
 Host is up, received user-set.
 
 PORT   STATE    SERVICE REASON

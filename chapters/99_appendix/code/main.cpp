@@ -6,8 +6,8 @@
 #include "lwip/sockets.h"
 #include "lwip/inet.h"
 
-const char* ssid     = "WN-CB5AE0";
-const char* password = "hy2pn6gx6i";
+const char* ssid     = "[REDACTED]";
+const char* password = "[REDACTED]";
 
 static esp_netif_t* sta_netif = nullptr;
 
