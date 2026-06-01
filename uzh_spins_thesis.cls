@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{uzh_spins_thesis}[2026/01/26 v1.0 UZH SPINS LaTeX thesis class]
-\LoadClass[10pt,twoside,a4paper,fleqn]{book}
+\LoadClass[10pt,twoside,a4paper,fleqn,openany]{book}
 \RequirePackage{uzh_spins}
 \raggedbottom
 \RequirePackage{titlesec}
