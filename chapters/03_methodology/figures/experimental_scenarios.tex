@@ -10,7 +10,7 @@
         \midrule
         S0 --- Internal Baseline & not relevant & internal host & IPv6 & confirm device identity, global IPv6 acquisition, and local availability of the implemented services \\
         S1 --- External Firewall ON & firewall enabled & external VPS & IPv6 & evaluate whether the device remains observable despite TCP service filtering \\
-        S2 --- External Firewall OFF & firewall disabled & external VPS & IPv6 & evaluate whether the same global IPv6 address enables effective access to HTTP, Telnet, and the hidden endpoint \\
+        S2 --- External Firewall OFF & firewall disabled & external VPS & IPv6 & evaluate whether the same global IPv6 address enables effective access to HTTP, Telnet, and the undocumented \texttt{/hidden\_admin} endpoint \\
         S3 --- Passive LAN & not relevant & internal passive observer & IPv6 & determine whether HTTP and Telnet communications remain visible in plaintext inside the LAN \\
         S4 --- IPv4 Baseline & no port forwarding & external VPS & IPv4 & establish a contrast with residential IPv4 by evaluating whether equivalent direct inbound access exists \\
         \bottomrule

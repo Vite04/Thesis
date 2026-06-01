@@ -12,7 +12,7 @@
         Port 80 state & \texttt{nmap -6 -sT} & open \\
         Port 23 state & \texttt{nmap -6 -sT} & open \\
         HTTP root (\texttt{/}) & \texttt{curl} & HTTP 200 OK (MAC + IPv6 information) \\
-        HTTP hidden endpoint (\texttt{/hidden\_admin}) & \texttt{curl} & HTTP 200 OK (Diagnostic Mode: ENABLED) \\
+        HTTP hidden administrative endpoint (\texttt{/hidden\_admin}) & \texttt{curl} & HTTP 200 OK (Diagnostic Mode: ENABLED) \\
         Telnet session & \texttt{ncat} & credentials transmitted and accepted in plaintext \\
         \bottomrule
     \end{tabularx}

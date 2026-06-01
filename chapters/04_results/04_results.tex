@@ -1,27 +1,27 @@
 \chapter{Experimental Results}\label{chap:results}
 
 \section{Address Assignment and Identifier Exposure}\label{sec:results-addressing}
-Upon connecting to a residential WiFi network, the ESP32 successfully completed the IPv6 autoconfiguration process through SLAAC. The logs confirm the assignment of a link-local address as well as a global IPv6 address, together with the MAC address and the parameters observed in \tabref{tab:device-identity-parameters}.
+Upon connecting to a residential Wi-Fi network, the ESP32 successfully completed the IPv6 autoconfiguration process through SLAAC. The logs confirm the assignment of a link-local address as well as a global IPv6 address, together with the MAC address and the parameters observed in \tabref{tab:device-identity-parameters}.
 \input{chapters/04_results/figures/device_identity_parameters.tex}
 The link-local address was assigned first, followed by the global address after the reception of the Router Advertisement. Both addresses coexisted in the interface during all the experimental scenarios.
 The interface identifier (IID) of the global address follows the EUI-64 format, embedding the device's MAC address (\texttt{28:05:A5:0E:73:6C}) directly into the IPv6 address~\cite{rye2023ipvseeyou} (\tabref{tab:device-identity-parameters}).
 
 \section{Internal Baseline and Local Service Availability (S0)}\label{sec:results-s0}
-The ESP32 responds correctly to ICMPv6 probes, and both TCP ports (80 and 23) are reachable, with the implemented services behaving as expected (\tabref{tab:s0-internal-baseline-results}).
+The ESP32 responded correctly to ICMPv6 probes, and both TCP ports (80 and 23) were reachable, with the implemented services behaving as expected (\tabref{tab:s0-internal-baseline-results}).
 \input{chapters/04_results/figures/s0_internal_baseline_results.tex}
-Accessing the HTTP root endpoint returns a valid response with device information, and the undocumented endpoint \texttt{/hidden\_admin} is also accessible without authentication (\tabref{tab:s0-internal-baseline-results}). Furthermore, a Telnet session can be established using default plaintext credentials.
+Accessing the HTTP root endpoint returned a valid response with device information, and the hidden administrative interface (\texttt{/hidden\_admin}) was also accessible without authentication (\tabref{tab:s0-internal-baseline-results}). Furthermore, a Telnet session could be established using default plaintext credentials.
 All interactions were recorded in the ESP32 serial logs, which capture source addresses, requested resources, and authentication events (see Appendix~\ref{app:results-s0} for the raw logs of this scenario). This confirms that both the device and its services were fully operational before introducing any external interaction.
 
 \section{External IPv6 Reachability with Firewall Enabled (S1)}\label{sec:results-s1}
-ICMPv6 probes received responses in all attempts (10/10), with an average RTT of ~40 ms (\tabref{tab:s1-external-ipv6-fw-enabled-results}).
+ICMPv6 probes received responses in all attempts (10/10), with an average round-trip time (RTT) of 40.8 ms (\tabref{tab:s1-external-ipv6-fw-enabled-results}).
 \input{chapters/04_results/figures/s1_external_ipv6_firewall_enabled_results.tex}
 However, no transport-layer connectivity was observed. Ports 80 and 23 were reported as filtered, with no TCP responses (\tabref{tab:s1-external-ipv6-fw-enabled-results}). HTTP requests timed out, and no Telnet session could be established. The device did not register any incoming TCP connections during this scenario.
 Packet captures on the VPS confirmed that only ICMPv6 traffic reached the destination, while all TCP SYNs remained unanswered (supported by logs in Appendix~\ref{app:results-s1}).
 
 \section{External IPv6 Accessibility with Firewall Disabled (S2)}\label{sec:results-s2}
-ICMPv6 connectivity remained consistent, with 10/10 responses and an average RTT of ~40 ms (\tabref{tab:s2-external-ipv6-fw-disabled-results}).
+ICMPv6 connectivity remained consistent, with 10/10 responses and an average RTT of 40.4 ms (\tabref{tab:s2-external-ipv6-fw-disabled-results}).
 \input{chapters/04_results/figures/s2_external_ipv6_firewall_disabled_results.tex}
-Ports 80 and 23 were reported as open, and both services were accessible from the external host (\tabref{tab:s2-external-ipv6-fw-disabled-results}). The HTTP root endpoint returned a valid response, the \texttt{/hidden\_admin} endpoint was accessible without authentication, and the Telnet session accepted the default plaintext credentials.
+Ports 80 and 23 were reported as open, and both services were accessible from the external host (\tabref{tab:s2-external-ipv6-fw-disabled-results}). The HTTP root endpoint returned a valid response, the hidden administrative interface (\texttt{/hidden\_admin}) was accessible without authentication, and the Telnet session accepted the default plaintext credentials.
 HTTP responses included device information, and the logs confirmed incoming connections from the external address along with the associated events (see Appendix~\ref{app:results-s2}). Traffic captures revealed that the HTTP exchange, including the request to \texttt{/hidden\_admin} and its response, was completely visible in plaintext.
 
 \section{Local Traffic Visibility and Plaintext Exposure (S3)}\label{sec:results-s3}
@@ -31,10 +31,10 @@ The device’s MAC address was visible in the Ethernet headers (\tabref{tab:s3-l
 \section{IPv4 Baseline Without Port Forwarding (S4)}\label{sec:results-s4}
 The router responded to ICMP probes, confirming network-level connectivity (\tabref{tab:s4-ipv4-baseline-results}).
 \input{chapters/04_results/figures/s4_ipv4_baseline_results.tex}
-Ports 80 and 23 were reported as filtered, and HTTP requests timed out with no response (\tabref{tab:s4-ipv4-baseline-results}). No direct inbound access to the device’s services was observed under this configuration.
+Ports 80 and 23 were reported as filtered, and HTTP requests timed out with no response (\tabref{tab:s4-ipv4-baseline-results}). No direct inbound access to the device’s services was observed under this configuration (see Appendix~\ref{app:results-s4}).
 
 \section{Cross-Scenario Summary}\label{sec:results-summary}
 The results show consistent differences between the internal baseline (S0), external network-level response without application access (S1), external service accessibility (S2), local traffic visibility (S3), and the IPv4 scenario without port forwarding (S4), as summarized in \tabref{tab:cross-scenario-comparative-results}.
 \input{chapters/04_results/figures/cross_scenario_comparative_results.tex}
-The results presented in this section document the behavior of the device under the different perimetral conditions (\tabref{tab:cross-scenario-comparative-results}). The observations focus on connectivity, service exposure, and identifier visibility, and serve as empirical evidence for the discussion that follows.
+The results presented in this section document the behavior of the device under the different perimeter conditions (\tabref{tab:cross-scenario-comparative-results}). The observations focus on connectivity, service exposure, and identifier visibility, and serve as empirical evidence for the discussion that follows.
 

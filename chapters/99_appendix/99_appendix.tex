@@ -11,33 +11,42 @@ The following sections document the raw evidence collected during the execution 
 The objective of this scenario is to verify the internal availability of all services on the LAN before any external reachability tests.
 
 \subsection{Local Network Discovery and ICMPv6}
-The following logs show the device identifying its IPv6 global and link-local addresses.
+The following log shows the device identifying its IPv6 global and link-local addresses.
 \lstinputlisting[frame=single, caption={S0 - Device Serial Log}]{chapters/99_appendix/Results/S0/Serial log.txt}
 
 \subsection{Internal Service Verification}
-\lstinputlisting[frame=single, caption={S0 - Local HTTP Root Request}]{chapters/99_appendix/Results/S0/s0_curl_root.txt}
-\lstinputlisting[frame=single, caption={S0 - Local HTTP Hidden Admin Request}]{chapters/99_appendix/Results/S0/s0_curl_hidden.txt}
-\lstinputlisting[frame=single, caption={S0 - Local Nmap Scan Output}]{chapters/99_appendix/Results/S0/s0_nmap.txt}
+The local host verified that the HTTP, Telnet, and port scanning functions behaved as expected on the internal network.
 
 % ==========================================
 \section{Scenario 1: External Reachability (Firewall ON)}\label{app:results-s1}
 In this scenario, an external VPS attempts to reach the device while the residential router's IPv6 firewall is active.
 
 \subsection{Remote Reachability and Service Probing}
-\lstinputlisting[frame=single, caption={S1 - External ICMPv6 Ping}]{chapters/99_appendix/Results/S1/s1_ping6.txt}
+The firewall permitted ICMPv6 traffic but filtered all TCP requests.
 \lstinputlisting[frame=single, caption={S1 - External Nmap Scan (Firewall Active)}]{chapters/99_appendix/Results/S1/s1_nmap.txt}
+
+\subsection{Packet Analysis}
+The packet capture on the external VPS confirmed that TCP SYN packets received no responses.
+\lstinputlisting[frame=single, caption={S1 - External tcpdump Output (TCP Filters Active)}]{chapters/99_appendix/Results/S1/s1_tcpdump.txt}
 
 % ==========================================
 \section{Scenario 2: Service Exposure (Firewall OFF)}\label{app:results-s2}
 This scenario demonstrates the full exposure of the IoT services when the IPv6 firewall is disabled or misconfigured.
 
-\subsection{External Service Access}
-\lstinputlisting[frame=single, caption={S2 - External HTTP Hidden Admin Access}]{chapters/99_appendix/Results/S2/s2_curl_hidden.txt}
-\lstinputlisting[frame=single, caption={S2 - External Telnet Session Attempt}]{chapters/99_appendix/Results/S2/s2_telnet.txt}
-
-\subsection{Packet Analysis and Remote Discovery}
+\subsection{Remote Reachability and Service Probing}
+Without firewall restrictions, the device was fully discoverable and both ports were reported open.
 \lstinputlisting[frame=single, caption={S2 - Remote Port Scan Result}]{chapters/99_appendix/Results/S2/s2_nmap.txt}
+
+\subsection{External Service Access}
+Unrestricted external access permitted remote control, dashboard retrieval, and hidden administrative interface interaction.
+
+\subsection{Packet Analysis}
+The network capture verified that all HTTP conversations were completely unencrypted.
 \lstinputlisting[frame=single, caption={S2 - External Packet Capture (Plaintext HTTP Request/Response)}]{chapters/99_appendix/Results/S2/s2_tcdeump_http_ascii.txt}
+
+\subsection{Device-Side Connection Logs}
+The ESP32 serial console recorded all incoming remote connection requests, Telnet authentication attempts, and queries to the hidden administrative interface.
+\lstinputlisting[frame=single, caption={S2 - Device Serial Log}]{chapters/99_appendix/Results/S2/S2 serial logs.txt}
 
 % ==========================================
 \section{Scenario 3: Local Traffic Observation}\label{app:results-s3}
@@ -52,5 +61,6 @@ The following captures demonstrate that HTTP and Telnet payloads are visible wit
 The final scenario provides a comparison with a traditional IPv4/NAT environment, where external reachability is denied by default.
 
 \subsection{IPv4 External Reachability Attempt}
-\lstinputlisting[frame=single, caption={S4 - External IPv4 Ping}]{chapters/99_appendix/Results/S4/s4_ping4.txt}
+The router responded to network probes, but NAT discarded unsolicited service connection attempts.
 \lstinputlisting[frame=single, caption={S4 - External IPv4 Nmap Scan (NAT Filtered)}]{chapters/99_appendix/Results/S4/s4_nmap.txt}
+\lstinputlisting[frame=single, caption={S4 - External IPv4 HTTP Connection Attempt (Timeout)}]{chapters/99_appendix/Results/S4/s4_curl.txt}

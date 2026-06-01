@@ -11,17 +11,18 @@
         \midrule
         Global IPv6 assigned & \checkmark & \checkmark & \checkmark & \checkmark & --- \\
         EUI-64 MAC derivable & \checkmark & \checkmark & \checkmark & \checkmark & --- \\
-        ICMP response rate & 100\% & 100\% & 100\% & --- & --- \\
+        ICMP response rate & 100\% & 100\% & 100\% & --- & 100\%\textsuperscript{a} \\
         Mean RTT & 7 ms & 40.8 ms & 40.4 ms & --- & 35.6 ms \\
         Port 80 state & open & filtered & open & --- & filtered \\
         Port 23 state & open & filtered & open & --- & filtered \\
         HTTP root accessible & \checkmark & \ding{55} & \checkmark & --- & \ding{55} \\
-        Hidden endpoint accessible & \checkmark & \ding{55} & \checkmark & --- & \ding{55} \\
+        Hidden admin interface accessible & \checkmark & \ding{55} & \checkmark & --- & \ding{55} \\
         Telnet session established & \checkmark & \ding{55} & \checkmark & \checkmark & \ding{55} \\
         Plaintext payload visible & --- & --- & \checkmark & \checkmark & --- \\
         Credentials visible & --- & --- & \checkmark & \checkmark & --- \\
         Inbound TCP connectivity & \checkmark & \ding{55} & \checkmark & \checkmark & \ding{55} \\
         \bottomrule
     \end{tabularx}
+    \smallskip\par\raggedright\scriptsize\textsuperscript{a} Measured at the public WAN interface of the residential router, as the internal host remains privately addressed behind the NAT boundary under S4.
 \end{table}
 
